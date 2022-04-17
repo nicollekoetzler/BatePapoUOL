@@ -1,0 +1,64 @@
+body {
+    background-color: #E5E5E5;
+    font-family: 'Roboto';
+}
+.topo {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+.logo {
+    width: 75px;
+    height: 53px;
+    margin-left: 22px;
+}
+.user {
+    width: 42px;
+    height: 30px;
+    margin-right: 22px;
+}
+.meio {
+    background-color: antiquewhite;
+    height: 100px;
+    margin-top: 26px;
+    margin-bottom: 26px;
+    margin-top: 110px;
+}
+.fundo {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.fundo input[type=text] {
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    margin-left: 22px;
+}
+.margem {
+    margin-right: 22px;
+}
+.coluna {
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+}
+.sidebarOFF {
+    height: 100vh;
+    width: 259px;
+    background-color: white;
+    position: fixed;
+}
