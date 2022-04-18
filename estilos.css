@@ -2,6 +2,7 @@ body {
     background-color: #E5E5E5;
     font-family: 'Roboto';
 }
+
 .topo {
     width: 100%;
     height: 80px;
@@ -13,23 +14,41 @@ body {
     position: fixed;
     top: 0;
 }
+
 .logo {
     width: 75px;
     height: 53px;
     margin-left: 22px;
 }
+
 .user {
     width: 42px;
     height: 30px;
     margin-right: 22px;
 }
-.meio {
+
+.mensagens {
     background-color: antiquewhite;
     height: 100px;
     margin-top: 26px;
     margin-bottom: 26px;
     margin-top: 110px;
 }
+
+.coluna {
+    background-color: white;
+    font-size: 14px;
+    padding: 10px 10px;
+}
+
+.horario {
+    color: #AAAAAA;
+}
+
+.remetente {
+    font-weight: bold;
+}
+
 .fundo {
     width: 100%;
     height: 80px;
@@ -42,23 +61,22 @@ body {
     bottom: 0;
     left: 0;
 }
+
 .fundo input[type=text] {
     border: 0;
     outline: 0;
     font-size: 18px;
     margin-left: 22px;
 }
+
 .margem {
     margin-right: 22px;
 }
-.coluna {
-    background-color: white;
-    padding-top: 10px;
-    padding-bottom: 10px; 
-}
+
 .sidebarOFF {
     height: 100vh;
     width: 259px;
     background-color: white;
     position: fixed;
 }
+
