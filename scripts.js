@@ -91,7 +91,7 @@ function adicionarMensagens(response){
             mensagemStatus(dadosMensagens[i]);
         } else if("message" === dadosMensagens[i].type){
             mensagemNormal(dadosMensagens[i]);
-        }else if("private_message" === dadosMensagens[i].type && (mensagem[i].from === nome || mensagem[i].to === nome || mensagem[i].to === "Todos")){
+        }else if("private_message" === dadosMensagens[i].type && (dadosMensagens[i].from === nome || dadosMensagens[i].to === nome || dadosMensagens[i].to === "Todos")){
             mensagemPrivada(dadosMensagens[i]);
         }
     } 
