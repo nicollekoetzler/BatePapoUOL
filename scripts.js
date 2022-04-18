@@ -62,7 +62,7 @@ function mensagemNormal(mensagem){
     </div>
     `
 }
-/*
+
 function mensagemPrivada(mensagem){
     document.querySelector(".mensagens").innerHTML += `
     <div class="linha private">
@@ -81,7 +81,7 @@ function mensagemPrivada(mensagem){
             </p>
     </div>
     `
-} */
+}
 
 function adicionarMensagens(response){
     const dadosMensagens = response.data;
@@ -91,9 +91,9 @@ function adicionarMensagens(response){
             mensagemStatus(dadosMensagens[i]);
         } else if("message" === dadosMensagens[i].type){
             mensagemNormal(dadosMensagens[i]);
-        } /* else if("private_message" === dadosMensagens[i].type){
+        }else if("private_message" === dadosMensagens[i].type){
             mensagemPrivada(dadosMensagens[i]);
-        } */
+        }
     } 
     document.querySelector(".linha:last-child").scrollIntoView()
 }
