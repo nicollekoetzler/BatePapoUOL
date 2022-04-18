@@ -91,11 +91,11 @@ function adicionarMensagens(response){
             mensagemStatus(dadosMensagens[i]);
         } else if("message" === dadosMensagens[i].type){
             mensagemNormal(dadosMensagens[i]);
-        }else if("private_message" === dadosMensagens[i].type){
+        }else if("private_message" === dadosMensagens[i].type && (mensagem.from === nome || mensagem.to === nome || mensagem.to === "Todos")){
             mensagemPrivada(dadosMensagens[i]);
         }
     } 
-    document.querySelector(".linha:last-child").scrollIntoView()
+    document.querySelector(".linha:last-child").scrollIntoView();
 }
 
 function carregarMensagens(){
