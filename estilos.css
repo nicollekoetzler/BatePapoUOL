@@ -91,3 +91,6 @@ body {
     position: fixed;
 }
 
+.botao {
+    cursor: pointer;
+}
