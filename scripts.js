@@ -20,14 +20,52 @@ function tratarErro(erro){
     }
 }
 
+function mensagemStatus(mensagem){
+    document.querySelector(".mensagens").innerHTML += `
+    <div class="linha status">
+        <p>
+            <span class="horario">
+                (${mensagem.time})
+            </span> <!-- separar texto -->
+            <span class="remetente">
+                ${mensagem.from}
+            </span>
+                ${mensagem.text}
+        </p>
+    </div>
+    `
+}
+
+function mensagemNormal(mensagem){
+    document.querySelector(".mensagens").innerHTML += `
+    <div class="linha para">
+            <p>
+                <span class="horario">
+                    (${mensagem.time})
+                </span> <!-- separar texto -->
+                <span class="remetente">
+                    ${mensagem.from}
+                </span>
+                    para
+                <span class="destinatario">
+                    ${mensagem.to}:
+                </span>
+                    ${mensagem.text}
+            </p>
+    </div>
+    `
+}
+
 function adicionarMensagens(response){
     const dadosMensagens = response.data;
     for (let i = 0; dadosMensagens.length > i ;i++){
         if("status" === dadosMensagens[i].type){
-            //TODO: adicionar mensagem status
+            mensagemStatus(dadosMensagens[i]);
+        } else if("message" === dadosMensagens[i].type){
+            mensagemNormal(dadosMensagens[i]);
         }
-        break;
-    }
+    } 
+    document.querySelector(".linha:last-child").scrollIntoView()
 }
 carregarMensagens();
 
